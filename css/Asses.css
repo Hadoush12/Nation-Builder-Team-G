@@ -1,0 +1,260 @@
+body {
+    background-image:url(/html/photos/img2.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+  }
+    
+  body , html{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0; 
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch ;
+  }
+
+
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.342); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    padding-top: 60px;
+    border: none; 
+    
+   }
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px;
+    
+     /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  .overlay a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    display: block; 
+    transition: 0.3s; 
+    border: none ;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+    }
+  
+    .openbtn {
+      font-size: 50px;
+      font-weight:200;
+      font-family: 'Courier New', Courier, monospace;
+      cursor: pointer;
+      color: black;
+      padding: 10px 15px;
+      background-color: rgba(244, 233, 255, 0);
+      border: none;
+      display: flex;
+      float: left;
+      margin-left: 20px;
+      margin-top: 1px;
+      
+      }
+  
+      .openbtn:hover {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        
+        }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 15px}
+    .overlay .closebtn {
+      font-size: 18px;
+      top: 15px;
+      right: 35px;
+    } 
+
+
+    }
+
+    div.header {
+      background-color: lightblue;
+      border: 1px solid black;
+      height: 100px;
+      width: 500px;
+      overflow-x: scroll;
+      }
+
+
+    #header {
+        margin-left:720px ;
+        margin-top: 80px;
+        font-size: 50px;
+        font-weight: bolder;
+        padding: 50px 10px; /* Some padding */
+        color: black;
+        position: fixed; /* Fixed position - sit on top of the page */
+        top: 0;
+        width: 100%; /* Full width */
+        transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+      } 
+
+    
+
+
+div.ppp:hover {
+    border: 1px solid rgba(119, 119, 119, 0);
+  }
+
+
+  
+  a.button {
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 4% 10% 4% 10%;
+}
+
+.ppp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+ text-align: center;
+ gap: 30px;
+ margin-right: 100px; 
+ 
+  }
+
+  @media  (max-height:767px){
+    .ppp { display: flex ;
+      flex-direction: column;
+
+    }
+    
+  }
+
+
+ .container{
+    width: 420px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    row-gap: 30px;
+    margin-top: 390px;
+ }
+
+ .circular-progress1{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background:conic-gradient(#1a8fb5 230deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .circular-progress2{
+  position: relative;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background:conic-gradient(#1a8fb5 160deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress3{
+  position: relative;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background:conic-gradient(#1a8fb5 120deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .circular-progress1::before{
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: rgba(248, 248, 248, 0.992);
+ }
+ .circular-progress2::before{
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: rgba(248, 248, 248, 0.992);
+}
+.circular-progress3::before{
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: rgba(248, 248, 248, 0.992);
+}
+ .progress-value{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+ }
+
+ 
+
+ .button {
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2% 10% 2% 6%; 
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+

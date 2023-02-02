@@ -1,0 +1,203 @@
+
+body {
+    background-image:url(/html/photos/img2.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+  }
+  
+  body , html{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling:touch ;
+  }
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.342);
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 60px;
+    border: none; 
+    
+   }
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+     
+  }
+  
+  .overlay a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    display: block; 
+    transition: 0.3s; 
+    border: none ;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+    }
+  
+    .openbtn {
+      font-size: 50px;
+      font-weight:200;
+      font-family: 'Courier New', Courier, monospace;
+      cursor: pointer;
+      color: black;
+      padding: 10px 15px;
+      background-color: rgba(244, 233, 255, 0);
+      border: none;
+      display: flex;
+      float: left;
+      margin-left: 20px;
+      margin-top: 1px;
+      
+      }
+  
+      .openbtn:hover {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        
+        }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 15px}
+    .overlay .closebtn {
+      font-size: 18px;
+      top: 15px;
+      right: 35px;
+    } 
+    }
+
+    #header {
+        margin-left:720px ;
+        margin-top: 80px;
+        font-size: 50px;
+        font-weight: bolder;
+        padding: 50px 10px; /* Some padding */
+        color: black;
+        position: fixed; /* Fixed position - sit on top of the page */
+        top: 0;
+        width: 100%; /* Full width */
+        transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+      } 
+
+
+form{
+  text-align: center;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-rows: 200px 200px;
+  margin-top: 250px;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+ text-align: center;
+ gap: 30px;
+ margin-right: 100px; 
+ 
+  }
+
+
+
+
+
+
+.button{
+  border-radius: 40px;
+  border: none;
+  height: 80px;
+  width: 170px ;
+  margin-top:30px ;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+label {
+  
+	background-image: url('/html/photos/back.png');
+  background-clip:border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 20% 5% 20%;
+  margin-left: 20%;
+	color:#000000;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ ;
+  
+  
+}
+
+
+
+
+  input[type=text] , input[type=email] {
+    height:3px;
+  background-color:#ffffff00;
+  border: 20px solid transparent;
+  padding: 5px 0px 5px 5px;
+  border-image-source:url('/html/photos/border.png');  
+  border-image-repeat: stretch;
+  border-image-slice: 70;
+  border-image-width: 30px;
+  border-image-outset: 30px;
+  margin-left: 100px;
+  }
+
+
+ 
+
+  
+
+  input[type=date] {
+    height:3px;
+    background-color:#ffffff00;
+  border: 20px solid transparent;
+  padding: 5px 0px 5px 5px;
+  border-image-source:url('/html/photos/border.png');  
+  border-image-repeat: stretch;
+  border-image-slice: 70;
+  border-image-width: 30px;
+  border-image-outset: 30px;
+  margin-left: 100px;
+  
+
+  
+  }
+
