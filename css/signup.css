@@ -1,6 +1,6 @@
 
 body {
-    background-image:url(/html/photos/img2.jpg) ;
+    background-image:url(../photos/img2.jpg) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
@@ -150,7 +150,7 @@ form{
 
 label {
   
-	background-image: url('/html/photos/back.png');
+	background-image: url('../photos/back.png');
   background-clip:border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,7 +172,7 @@ label {
   background-color:#ffffff00;
   border: 20px solid transparent;
   padding: 5px 0px 5px 5px;
-  border-image-source:url('/html/photos/border.png');  
+  border-image-source:url('../photos/border.png');  
   border-image-repeat: stretch;
   border-image-slice: 70;
   border-image-width: 30px;
@@ -190,7 +190,7 @@ label {
     background-color:#ffffff00;
   border: 20px solid transparent;
   padding: 5px 0px 5px 5px;
-  border-image-source:url('/html/photos/border.png');  
+  border-image-source:url('../photos/border.png');  
   border-image-repeat: stretch;
   border-image-slice: 70;
   border-image-width: 30px;
